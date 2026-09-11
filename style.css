@@ -1,246 +1,152 @@
-/* Variables y Estilos Base */
-:root {
-  --primary-color: #1a1a2e;
-  --accent-color: #e94560;
-  --bg-light: #f8f9fa;
-  --bg-dark: #16213e;
-  --text-dark: #222222;
-  --text-light: #f1f1f1;
-  --text-muted: #666666;
-  --font-title: 'Cinzel', serif;
-  --font-body: 'Montserrat', sans-serif;
-}
-
+/* Reset y variables generales */
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
-
-html {
-  scroll-behavior: smooth;
+  box-sizing: border-box;
 }
 
 body {
-  font-family: var(--font-body);
-  color: var(--text-dark);
-  background-color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0f0f11;
+  color: #e0e0e0;
   line-height: 1.6;
+  padding: 20px;
 }
 
+/* Contenedor principal */
 .container {
-  width: 90%;
-  max-width: 1100px;
+  max-width: 900px;
   margin: 0 auto;
-  padding: 40px 0;
 }
 
-.text-center {
+/* Encabezado */
+header {
   text-align: center;
-}
-
-.bg-alt {
-  background-color: var(--bg-light);
-}
-
-/* Navegación */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 5%;
-  background-color: var(--primary-color);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-
-.navbar .logo {
-  font-family: var(--font-title);
-  font-size: 1.4rem;
-  color: var(--text-light);
-  font-weight: 700;
-  letter-spacing: 1px;
-}
-
-.navbar nav ul {
-  display: flex;
-  list-style: none;
-  gap: 20px;
-}
-
-.navbar nav a {
-  color: var(--text-light);
-  text-decoration: none;
-  font-size: 0.95rem;
-  transition: color 0.3s ease;
-}
-
-.navbar nav a:hover {
-  color: var(--accent-color);
-}
-
-/* Hero Section */
-.hero {
-  background: linear-gradient(rgba(26, 26, 46, 0.85), rgba(22, 33, 62, 0.85)), #0f3460;
-  color: var(--text-light);
-  text-align: center;
-  padding: 100px 20px;
-}
-
-.hero h1 {
-  font-family: var(--font-title);
-  font-size: 3.5rem;
-  letter-spacing: 3px;
-  margin-bottom: 10px;
-  color: var(--accent-color);
-}
-
-.hero h2 {
-  font-family: var(--font-title);
-  font-size: 1.8rem;
-  font-weight: 300;
-  margin-bottom: 20px;
-}
-
-.hero .subtitle {
-  font-size: 1.1rem;
-  max-width: 600px;
-  margin: 0 auto 30px auto;
-  color: #dcdcdc;
-}
-
-/* Botones Principales */
-.btn-primary {
-  display: inline-block;
-  background-color: var(--accent-color);
-  color: #ffffff;
-  padding: 12px 30px;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.btn-primary:hover {
-  background-color: #c0354e;
-  transform: translateY(-2px);
-}
-
-/* Secciones Generales */
-.section {
-  padding: 60px 0;
-}
-
-.section h2 {
-  font-family: var(--font-title);
-  font-size: 2.2rem;
-  margin-bottom: 20px;
-  color: var(--primary-color);
-}
-
-.section-desc {
-  font-size: 1.1rem;
-  color: var(--text-muted);
+  padding: 40px 0 20px;
+  border-bottom: 1px solid #2a2a2e;
   margin-bottom: 30px;
 }
 
-.flex-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 40px;
-  align-items: center;
-}
-
-/* Detalles del Libro */
-.synopsis {
-  font-size: 1.1rem;
-  margin-bottom: 20px;
-}
-
-.book-details {
-  list-style: none;
-}
-
-.book-details li {
+h1 {
+  font-size: 2.4rem;
+  color: #ffffff;
   margin-bottom: 8px;
+  letter-spacing: 1px;
 }
 
-/* Botones de Tienda / Comprar (Nuevos Estilos) */
+.subtitle {
+  font-size: 1.1rem;
+  color: #a0a0ab;
+  font-style: italic;
+}
+
+/* Secciones */
+section {
+  background: #18181c;
+  border: 1px solid #2a2a2e;
+  border-radius: 12px;
+  padding: 25px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+h2 {
+  color: #ffffff;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #3a3a42;
+  padding-bottom: 8px;
+}
+
+/* Botones de Tiendas */
 .shop-buttons {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 15px;
+  justify-content: center;
   margin-top: 20px;
 }
 
 .btn-shop {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--primary-color);
-  color: var(--text-light);
-  padding: 18px 28px;
-  min-width: 260px;
-  border-radius: 10px;
+  display: inline-block;
+  background-color: #25252b;
+  color: #ffffff;
   text-decoration: none;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
-}
-
-.btn-shop .shop-name {
-  font-family: var(--font-title);
-  font-size: 1.1rem;
-  font-weight: 700;
-  margin-bottom: 5px;
-}
-
-.btn-shop .shop-action {
-  font-size: 0.85rem;
-  color: var(--accent-color);
+  padding: 12px 24px;
+  border-radius: 8px;
   font-weight: 600;
+  border: 1px solid #3a3a42;
+  transition: all 0.3s ease;
+  text-align: center;
 }
 
 .btn-shop:hover {
-  background-color: var(--bg-dark);
-  transform: translateY(-4px);
-  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+  background-color: #ffffff;
+  color: #0f0f11;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.15);
+}
+
+/* Sección Autor e Imagen */
+.author-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.bio-img img {
+  width: 100%;
+  max-width: 280px;
+  border-radius: 10px;
+  border: 1px solid #3a3a42;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+  object-fit: cover;
+}
+
+/* Reseñas */
+.review-card {
+  background: #202026;
+  border-left: 4px solid #5a5a68;
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+}
+
+.review-card p {
+  color: #cccccc;
+  font-style: italic;
+}
+
+.review-author {
+  margin-top: 8px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: right;
+  font-style: normal;
 }
 
 /* Footer */
-.footer {
-  background-color: var(--primary-color);
-  color: var(--text-light);
-  padding: 30px 0;
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #70707c;
   font-size: 0.9rem;
+  border-top: 1px solid #2a2a2e;
 }
 
-.footer .credits {
-  color: #888888;
-  margin-top: 8px;
-  font-size: 0.8rem;
-}
-
-/* Responsivo */
+/* Adaptación Mobile */
 @media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    gap: 12px;
+  body {
+    padding: 10px;
   }
   
-  .hero h1 {
-    font-size: 2.5rem;
-  }
-
   .shop-buttons {
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
   }
 
   .btn-shop {
     width: 100%;
-    max-width: 320px;
   }
 }

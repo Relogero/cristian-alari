@@ -4,7 +4,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
   background-color: #0b0a0f;
@@ -12,13 +11,11 @@ body {
   line-height: 1.6;
   padding: 0 15px;
 }
-
 /* Navegación */
 header {
   padding: 25px 10px;
   text-align: center;
 }
-
 .brand {
   font-size: 1.6rem;
   font-weight: 700;
@@ -27,25 +24,21 @@ header {
   text-shadow: 0 0 12px rgba(168, 85, 247, 0.4);
   margin-bottom: 12px;
 }
-
 nav {
   display: flex;
   justify-content: center;
   gap: 15px;
   flex-wrap: wrap;
 }
-
 nav a {
   color: #a1a1aa;
   text-decoration: none;
   font-size: 0.95rem;
   transition: color 0.3s ease;
 }
-
 nav a:hover {
   color: #ffffff;
 }
-
 /* Separador elegante de secciones */
 .section-divider {
   width: 100%;
@@ -54,14 +47,12 @@ nav a:hover {
   background: linear-gradient(90deg, transparent, rgba(168, 85, 247, 0.4), transparent);
   margin: 50px auto;
 }
-
 /* Secciones generales */
 section {
   max-width: 800px;
   margin: 30px auto;
   padding: 10px 0;
 }
-
 .section-tag {
   color: #a855f7;
   font-size: 0.8rem;
@@ -70,7 +61,6 @@ section {
   text-align: center;
   margin-bottom: 5px;
 }
-
 h2 {
   font-family: 'Georgia', serif;
   text-align: center;
@@ -79,19 +69,16 @@ h2 {
   letter-spacing: 1px;
   margin-bottom: 15px;
 }
-
 /* Hero Section (Imagen a la izquierda fija) */
 .hero-section {
   padding: 20px 0;
 }
-
 .hero-grid {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 30px;
 }
-
 @media (min-width: 680px) {
   .hero-grid {
     flex-direction: row;
@@ -108,14 +95,12 @@ h2 {
     align-items: flex-start !important;
   }
 }
-
 .hero-card {
   display: inline-block;
   padding: 8px;
   border-radius: 16px;
   background: radial-gradient(circle, rgba(168,85,247,0.25) 0%, rgba(11,10,15,0) 70%);
 }
-
 .book-cover {
   width: 100%;
   max-width: 260px;
@@ -124,7 +109,6 @@ h2 {
   display: block;
   margin: 0 auto;
 }
-
 .main-title {
   font-family: 'Georgia', serif;
   font-size: 1.7rem;
@@ -132,7 +116,6 @@ h2 {
   margin-bottom: 5px;
   letter-spacing: 1px;
 }
-
 .tagline {
   font-style: italic;
   font-size: 1.15rem;
@@ -140,7 +123,6 @@ h2 {
   margin-bottom: 15px;
   font-weight: 600;
 }
-
 /* Formato para la Sinopsis */
 .synopsis-box {
   color: #d1d1d6;
@@ -148,11 +130,9 @@ h2 {
   line-height: 1.7;
   margin-bottom: 25px;
 }
-
 .synopsis-box p {
   margin-bottom: 14px;
 }
-
 /* Botones */
 .shop-buttons {
   display: flex;
@@ -160,7 +140,6 @@ h2 {
   gap: 12px;
   align-items: center;
 }
-
 .btn {
   display: inline-block;
   width: 100%;
@@ -175,21 +154,17 @@ h2 {
   border: none;
   cursor: pointer;
 }
-
 .btn:hover {
   transform: translateY(-2px);
   opacity: 0.9;
 }
-
 .btn-purple { background-color: #9333ea; color: #ffffff; }
 .btn-amazon { background-color: #f97316; color: #ffffff; }
 .btn-store { background-color: #27272a; color: #ffffff; border: 1px solid #3f3f46; }
 .btn-gradient { background: linear-gradient(90deg, #f97316, #e11d48, #9333ea); color: #ffffff; }
 .btn-outline { background: transparent; border: 1px solid #9333ea; color: #ffffff; }
-
 /* Sección Próximamente con Neón Rojo Elegante */
 .section-center { text-align: center; }
-
 .red-neon-card {
   background-color: #12080a;
   border: 1px solid rgba(239, 68, 68, 0.4);
@@ -198,7 +173,6 @@ h2 {
   box-shadow: 0 0 25px rgba(239, 68, 68, 0.15), inset 0 0 15px rgba(239, 68, 68, 0.05);
   max-width: 700px;
 }
-
 .badge-red {
   display: inline-block;
   border: 1px solid #ef4444;
@@ -211,55 +185,48 @@ h2 {
   background-color: rgba(239, 68, 68, 0.1);
   box-shadow: 0 0 10px rgba(239, 68, 68, 0.3);
 }
-
 .sub-text {
   color: #a1a1aa;
   font-size: 0.95rem;
 }
-
+/* Animación de pulso neón para el círculo de misterio */
+@keyframes neon-pulse {
+  0% { box-shadow: 0 0 15px rgba(239, 68, 68, 0.4), inset 0 0 10px rgba(239, 68, 68, 0.2); }
+  50% { box-shadow: 0 0 30px rgba(239, 68, 68, 0.8), inset 0 0 15px rgba(239, 68, 68, 0.5); }
+  100% { box-shadow: 0 0 15px rgba(239, 68, 68, 0.4), inset 0 0 10px rgba(239, 68, 68, 0.2); }
+}
 .mystery-circle {
   width: 80px;
   height: 80px;
   border-radius: 50%;
   border: 2px solid #ef4444;
-  box-shadow: 0 0 20px rgba(239, 68, 68, 0.5), inset 0 0 10px rgba(239, 68, 68, 0.3);
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 2.2rem;
   color: #ef4444;
-  margin: 25px auto;
+  margin: 25px auto 15px auto;
   text-shadow: 0 0 8px rgba(239, 68, 68, 0.8);
+  animation: neon-pulse 3s infinite ease-in-out;
 }
-
-.newsletter-form {
+/* Estilos para las mini etiquetas temáticas */
+.teaser-tags {
   display: flex;
-  flex-direction: column;
-  gap: 12px;
-  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 15px;
 }
-
-.newsletter-form input {
-  width: 100%;
-  max-width: 340px;
-  padding: 12px;
-  background-color: #18181b;
-  border: 1px solid #3f3f46;
-  border-radius: 8px;
-  color: #ffffff;
-  text-align: center;
+.teaser-tag {
+  font-size: 0.7rem;
+  color: #a1a1aa;
+  background-color: rgba(239, 68, 68, 0.05);
+  border: 1px solid rgba(239, 68, 68, 0.2);
+  padding: 4px 10px;
+  border-radius: 6px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
-
-.btn-red-glow {
-  background-color: #dc2626;
-  color: #ffffff;
-  box-shadow: 0 0 15px rgba(220, 38, 38, 0.5);
-}
-
-.btn-red-glow:hover {
-  box-shadow: 0 0 22px rgba(220, 38, 38, 0.8);
-}
-
 /* Reseñas */
 .reviews-grid {
   display: flex;
@@ -267,44 +234,37 @@ h2 {
   gap: 15px;
   margin: 20px 0;
 }
-
 .review-card {
   background-color: #13111c;
   border: 1px solid #272335;
   border-radius: 12px;
   padding: 18px;
 }
-
 .review-card p {
   font-style: italic;
   color: #d1d1d6;
   font-size: 0.9rem;
 }
-
 .review-author {
   display: block;
   margin-top: 10px;
   color: #a855f7;
   font-size: 0.85rem;
 }
-
 .center-btn {
   display: flex;
   justify-content: center;
   margin-top: 15px;
 }
-
 /* Sobre el Autor */
 .author-section {
   text-align: center;
 }
-
 .profile-avatar-container {
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
 }
-
 .avatar-ring {
   width: 130px;
   height: 130px;
@@ -316,38 +276,32 @@ h2 {
   justify-content: center;
   background-color: #13111c;
 }
-
 .avatar-placeholder {
   color: #ffffff;
   font-weight: 600;
   font-size: 0.9rem;
 }
-
 .author-title {
   font-size: 2rem;
   margin-bottom: 5px;
 }
-
 .author-subtitle {
   color: #ffffff;
   font-weight: 600;
   font-size: 0.95rem;
   margin-bottom: 15px;
 }
-
 .author-bio {
   color: #a1a1aa;
   font-size: 0.9rem;
   margin-bottom: 12px;
 }
-
 .info-boxes {
   display: flex;
   gap: 15px;
   justify-content: center;
   margin: 25px 0;
 }
-
 .info-box {
   background-color: #13111c;
   border: 1px solid #272335;
@@ -356,28 +310,23 @@ h2 {
   flex: 1;
   max-width: 160px;
 }
-
 .info-box h3 {
   color: #a855f7;
   font-size: 0.9rem;
   letter-spacing: 1px;
 }
-
 .info-box p {
   font-size: 0.8rem;
   color: #a1a1aa;
 }
-
 .social-buttons {
   display: flex;
   gap: 10px;
   justify-content: center;
 }
-
 .social-buttons .btn {
   max-width: 160px;
 }
-
 /* Footer */
 footer {
   text-align: center;
@@ -386,7 +335,6 @@ footer {
   color: #71717a;
   font-size: 0.8rem;
 }
-
 footer a {
   color: #a855f7;
   text-decoration: none;

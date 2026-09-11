@@ -20,41 +20,51 @@
     </nav>
   </header>
 
-  <!-- Hero Section -->
+  <!-- Hero Section (Imagen a la izquierda, detalles a la derecha) -->
   <section id="hero" class="hero-section">
-    <div class="hero-card">
-      <img src="portada.jpg" alt="Morgana - Pulsión de Muerte I" class="book-cover">
-    </div>
-    <h1 class="main-title">MORGANA - PULSIÓN DE MUERTE I</h1>
-    <p class="tagline">«¿EL REY ARTURO EN LANÚS?»</p>
-    <p class="description">
-      El obispo de Lanús llevaba una vida tranquila y apacible hasta que una noche, al volver de su iglesia, se topó con un desconocido que vino a cobrarse una deuda del pasado. Le auguró una cruel y dolorosa muerte.
-    </p>
+    <div class="hero-grid">
+      <div class="hero-left">
+        <div class="hero-card">
+          <img src="portada.jpg" alt="Morgana - Pulsión de Muerte I" class="book-cover">
+        </div>
+      </div>
+      <div class="hero-right">
+        <h1 class="main-title">MORGANA - PULSIÓN DE MUERTE I</h1>
+        <p class="tagline">«¿EL REY ARTURO EN LANÚS?»</p>
+        <p class="description">
+          El obispo de Lanús llevaba una vida tranquila y apacible hasta que una noche, al volver de su iglesia, se topó con un desconocido que vino a cobrarse una deuda del pasado. Le auguró una cruel y dolorosa muerte.
+        </p>
 
-    <!-- Botones de Compra / Tiendas -->
-    <div class="shop-buttons">
-      <a href="#" target="_blank" class="btn btn-purple">Ver Morgana I</a>
-      <a href="#" target="_blank" class="btn btn-amazon">Comprar en Amazon</a>
-      <a href="#" target="_blank" class="btn btn-store">Restaurant de la Mente</a>
-      <a href="#" target="_blank" class="btn btn-store">Pipbuk</a>
+        <!-- Botones de Compra / Tiendas -->
+        <div class="shop-buttons">
+          <a href="#" target="_blank" class="btn btn-purple">Ver Morgana I</a>
+          <a href="#" target="_blank" class="btn btn-amazon">Comprar en Amazon</a>
+          <a href="#" target="_blank" class="btn btn-store">Restaurant de la Mente</a>
+          <a href="#" target="_blank" class="btn btn-store">Pipbuk</a>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- Próximamente -->
-  <section id="proximamente" class="section-center">
+  <div class="section-divider"></div>
+
+  <!-- Próximamente (Sección con Neón Rojo Elegante y Recuadro Destacado) -->
+  <section id="proximamente" class="section-center red-neon-card">
     <div class="badge-red">PRÓXIMO LANZAMIENTO</div>
     <h2>¿QUÉ SE OCULTA EN LAS SOMBRAS?</h2>
-    <p>Una nueva historia se está gestando... Los secretos aún no revelados pronto verán la luz.</p>
+    <p class="sub-text">Una nueva historia se está gestando... Los secretos aún no revelados pronto verán la luz.</p>
     <div class="mystery-circle">?</div>
     
     <form class="newsletter-form" onsubmit="event.preventDefault();">
       <input type="email" placeholder="Tu email para novedades exclusivas">
-      <button type="submit" class="btn btn-red">El Nuevo Libro</button>
+      <button type="submit" class="btn btn-red-glow">El Nuevo Libro</button>
     </form>
   </section>
 
+  <div class="section-divider"></div>
+
   <!-- Reseñas -->
-  <section id="reseñas">
+  <section id="reseñas" class="reviews-section">
     <div class="section-tag">OPINIONES</div>
     <h2>LO QUE DICEN LOS LECTORES</h2>
     <div class="reviews-grid">
@@ -75,6 +85,8 @@
       <a href="https://instagram.com" target="_blank" class="btn btn-gradient">Comentar en Instagram</a>
     </div>
   </section>
+
+  <div class="section-divider"></div>
 
   <!-- El Autor -->
   <section id="autor" class="author-section">

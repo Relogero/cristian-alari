@@ -46,11 +46,20 @@ nav a:hover {
   color: #ffffff;
 }
 
+/* Separador elegante de secciones */
+.section-divider {
+  width: 100%;
+  max-width: 750px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(168, 85, 247, 0.4), transparent);
+  margin: 50px auto;
+}
+
 /* Secciones generales */
 section {
-  max-width: 650px;
-  margin: 40px auto;
-  padding: 20px 0;
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 10px 0;
 }
 
 .section-tag {
@@ -71,9 +80,33 @@ h2 {
   margin-bottom: 15px;
 }
 
-/* Hero & Libros */
+/* Hero Section (2 columnas: Imagen izquierda, Texto derecha) */
 .hero-section {
-  text-align: center;
+  padding: 20px 0;
+}
+
+.hero-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+@media (min-width: 650px) {
+  .hero-grid {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .hero-left {
+    flex: 0 0 40%;
+  }
+  .hero-right {
+    flex: 0 0 60%;
+    text-align: left;
+  }
+  .shop-buttons {
+    align-items: flex-start !important;
+  }
 }
 
 .hero-card {
@@ -88,13 +121,15 @@ h2 {
   max-width: 280px;
   border-radius: 12px;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.7);
+  display: block;
+  margin: 0 auto;
 }
 
 .main-title {
   font-family: 'Georgia', serif;
   font-size: 1.7rem;
   color: #ffffff;
-  margin: 20px 0 5px;
+  margin-bottom: 5px;
   letter-spacing: 1px;
 }
 
@@ -129,7 +164,7 @@ h2 {
   text-decoration: none;
   text-align: center;
   font-size: 0.95rem;
-  transition: transform 0.2s, opacity 0.2s;
+  transition: transform 0.2s, opacity 0.2s, box-shadow 0.2s;
   border: none;
   cursor: pointer;
 }
@@ -142,42 +177,58 @@ h2 {
 .btn-purple { background-color: #9333ea; color: #ffffff; }
 .btn-amazon { background-color: #f97316; color: #ffffff; }
 .btn-store { background-color: #27272a; color: #ffffff; border: 1px solid #3f3f46; }
-.btn-red { background-color: #dc2626; color: #ffffff; }
 .btn-gradient { background: linear-gradient(90deg, #f97316, #e11d48, #9333ea); color: #ffffff; }
 .btn-outline { background: transparent; border: 1px solid #9333ea; color: #ffffff; }
 
-/* Próximamente */
+/* Sección Próximamente con Neón Rojo Elegante */
 .section-center { text-align: center; }
+
+.red-neon-card {
+  background-color: #12080a;
+  border: 1px solid rgba(239, 68, 68, 0.4);
+  border-radius: 16px;
+  padding: 35px 20px;
+  box-shadow: 0 0 25px rgba(239, 68, 68, 0.15), inset 0 0 15px rgba(239, 68, 68, 0.05);
+  max-width: 700px;
+}
 
 .badge-red {
   display: inline-block;
   border: 1px solid #ef4444;
-  color: #ef4444;
+  color: #f87171;
   font-size: 0.75rem;
-  padding: 4px 12px;
+  padding: 4px 14px;
   border-radius: 20px;
   letter-spacing: 1px;
   margin-bottom: 15px;
+  background-color: rgba(239, 68, 68, 0.1);
+  box-shadow: 0 0 10px rgba(239, 68, 68, 0.3);
+}
+
+.sub-text {
+  color: #a1a1aa;
+  font-size: 0.95rem;
 }
 
 .mystery-circle {
-  width: 90px;
-  height: 90px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   border: 2px solid #ef4444;
-  box-shadow: 0 0 15px rgba(239, 68, 68, 0.4);
+  box-shadow: 0 0 20px rgba(239, 68, 68, 0.5), inset 0 0 10px rgba(239, 68, 68, 0.3);
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 2.2rem;
   color: #ef4444;
   margin: 25px auto;
+  text-shadow: 0 0 8px rgba(239, 68, 68, 0.8);
 }
 
 .newsletter-form {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 12px;
   align-items: center;
 }
 
@@ -186,10 +237,20 @@ h2 {
   max-width: 340px;
   padding: 12px;
   background-color: #18181b;
-  border: 1px solid #27272a;
+  border: 1px solid #3f3f46;
   border-radius: 8px;
   color: #ffffff;
   text-align: center;
+}
+
+.btn-red-glow {
+  background-color: #dc2626;
+  color: #ffffff;
+  box-shadow: 0 0 15px rgba(220, 38, 38, 0.5);
+}
+
+.btn-red-glow:hover {
+  box-shadow: 0 0 22px rgba(220, 38, 38, 0.8);
 }
 
 /* Reseñas */

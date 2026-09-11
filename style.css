@@ -80,7 +80,7 @@ h2 {
   margin-bottom: 15px;
 }
 
-/* Hero Section (2 columnas: Imagen izquierda, Texto derecha) */
+/* Hero Section (Imagen a la izquierda) */
 .hero-section {
   padding: 20px 0;
 }
@@ -92,16 +92,18 @@ h2 {
   gap: 30px;
 }
 
-@media (min-width: 650px) {
+@media (min-width: 680px) {
   .hero-grid {
     flex-direction: row;
     align-items: flex-start;
   }
   .hero-left {
-    flex: 0 0 40%;
+    flex: 0 0 35%;
+    position: sticky;
+    top: 20px;
   }
   .hero-right {
-    flex: 0 0 60%;
+    flex: 0 0 65%;
     text-align: left;
   }
   .shop-buttons {
@@ -118,7 +120,7 @@ h2 {
 
 .book-cover {
   width: 100%;
-  max-width: 280px;
+  max-width: 260px;
   border-radius: 12px;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.7);
   display: block;
@@ -135,15 +137,22 @@ h2 {
 
 .tagline {
   font-style: italic;
-  font-size: 1.1rem;
-  color: #d1d1d6;
+  font-size: 1.15rem;
+  color: #a855f7;
   margin-bottom: 15px;
+  font-weight: 600;
 }
 
-.description {
-  color: #a1a1aa;
+/* Formato para la Sinopsis */
+.synopsis-box {
+  color: #d1d1d6;
   font-size: 0.95rem;
+  line-height: 1.7;
   margin-bottom: 25px;
+}
+
+.synopsis-box p {
+  margin-bottom: 14px;
 }
 
 /* Botones */
@@ -155,7 +164,7 @@ h2 {
 }
 
 .btn {
-  display: block;
+  display: inline-block;
   width: 100%;
   max-width: 340px;
   padding: 12px 20px;

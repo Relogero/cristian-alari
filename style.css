@@ -80,7 +80,7 @@ h2 {
   margin-bottom: 15px;
 }
 
-/* Hero Section (Imagen a la izquierda) */
+/* Hero Section (Imagen a la izquierda fija) */
 .hero-section {
   padding: 20px 0;
 }
@@ -99,8 +99,6 @@ h2 {
   }
   .hero-left {
     flex: 0 0 35%;
-    position: sticky;
-    top: 20px;
   }
   .hero-right {
     flex: 0 0 65%;

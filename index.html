@@ -3,92 +3,119 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cristian Alari | Morgana: Pulsión de muerte 1</title>
+  <title>Cristian Alari - Autor</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- Encabezado / Navegación -->
-  <header class="navbar">
-    <div class="logo">Cristian Alari</div>
+  <!-- Navegación -->
+  <header>
+    <div class="brand">CRISTIAN ALARI</div>
     <nav>
-      <ul>
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#sobre-el-autor">Sobre el Autor</a></li>
-        <li><a href="#el-libro">El Libro</a></li>
-        <li><a href="#donde-comprar">Comprar</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
+      <a href="#hero">Inicio</a>
+      <a href="#morgana">Morgana I</a>
+      <a href="#proximamente">Próximamente</a>
+      <a href="#reseñas">Reseñas</a>
+      <a href="#autor">El Autor</a>
     </nav>
   </header>
 
-  <!-- Sección Hero / Inicio -->
-  <section id="inicio" class="hero">
-    <div class="hero-content">
-      <h1>Morgana</h1>
-      <h2>Pulsión de muerte 1</h2>
-      <p class="subtitle">Una obra atrapante de fantasía oscura y misterio escrita por Cristian Alari.</p>
-      <a href="#donde-comprar" class="btn-primary">Consigue tu ejemplar</a>
+  <!-- Hero Section -->
+  <section id="hero" class="hero-section">
+    <div class="hero-card">
+      <img src="portada.jpg" alt="Morgana - Pulsión de Muerte I" class="book-cover">
+    </div>
+    <h1 class="main-title">MORGANA - PULSIÓN DE MUERTE I</h1>
+    <p class="tagline">«¿EL REY ARTURO EN LANÚS?»</p>
+    <p class="description">
+      El obispo de Lanús llevaba una vida tranquila y apacible hasta que una noche, al volver de su iglesia, se topó con un desconocido que vino a cobrarse una deuda del pasado. Le auguró una cruel y dolorosa muerte.
+    </p>
+
+    <!-- Botones de Compra / Tiendas -->
+    <div class="shop-buttons">
+      <a href="#" target="_blank" class="btn btn-purple">Ver Morgana I</a>
+      <a href="#" target="_blank" class="btn btn-amazon">Comprar en Amazon</a>
+      <a href="#" target="_blank" class="btn btn-store">Restaurant de la Mente</a>
+      <a href="#" target="_blank" class="btn btn-store">Pipbuk</a>
     </div>
   </section>
 
-  <!-- Sobre el Autor -->
-  <section id="sobre-el-autor" class="section">
-    <div class="container flex-container">
-      <div class="bio-text">
-        <h2>Sobre el Autor</h2>
-        <p><strong>Cristian Alari</strong> es un escritor independiente apasionado por la literatura fantástica, la psicología humana y las narrativas de suspenso profundo. Con una voz narrativa envolvente y detallista, explora en sus obras los dilemas morales, el destino y las sombras de la psique.</p>
-        <p><em>"Morgana. Pulsión de muerte 1"</em> representa el inicio de una saga imperdible que conecta la intriga con mundos fascinantes.</p>
+  <!-- Próximamente -->
+  <section id="proximamente" class="section-center">
+    <div class="badge-red">PRÓXIMO LANZAMIENTO</div>
+    <h2>¿QUÉ SE OCULTA EN LAS SOMBRAS?</h2>
+    <p>Una nueva historia se está gestando... Los secretos aún no revelados pronto verán la luz.</p>
+    <div class="mystery-circle">?</div>
+    
+    <form class="newsletter-form" onsubmit="event.preventDefault();">
+      <input type="email" placeholder="Tu email para novedades exclusivas">
+      <button type="submit" class="btn btn-red">El Nuevo Libro</button>
+    </form>
+  </section>
+
+  <!-- Reseñas -->
+  <section id="reseñas">
+    <div class="section-tag">OPINIONES</div>
+    <h2>LO QUE DICEN LOS LECTORES</h2>
+    <div class="reviews-grid">
+      <div class="review-card">
+        <p>«Una trama oscura y atrapante de principio a fin. La mezcla entre el misterio policial y la mitología celta te deja sin aliento.»</p>
+        <span class="review-author">— Reseña en Instagram</span>
+      </div>
+      <div class="review-card">
+        <p>«Personajes muy bien construidos y un ritmo vertiginoso. No podés parar de leer para entender el rompecabezas.»</p>
+        <span class="review-author">— Lector en Amazon</span>
+      </div>
+      <div class="review-card">
+        <p>«Un suspenso excelente ambientado con una atmósfera única. Esperando con ansias la continuación.»</p>
+        <span class="review-author">— Comunidad Literaria</span>
       </div>
     </div>
+    <div class="center-btn">
+      <a href="https://instagram.com" target="_blank" class="btn btn-gradient">Comentar en Instagram</a>
+    </div>
   </section>
 
-  <!-- El Libro / Sinopsis -->
-  <section id="el-libro" class="section bg-alt">
-    <div class="container flex-container">
-      <div class="book-info">
-        <h2>Morgana: Pulsión de muerte 1</h2>
-        <p class="synopsis">
-          Sumergite en una trama llena de tensión, enigmas y emociones a flor de piel. Una historia donde los límites entre la vida, el deseo y la destrucción se entrelazan en cada página.
-        </p>
-        <ul class="book-details">
-          <li><strong>Formato:</strong> Tapa blanda / Edición física y digital</li>
-          <li><strong>Género:</strong> Fantasía oscura / Suspenso / Ficción</li>
-          <li><strong>Autor:</strong> Cristian Alari</li>
-        </ul>
+  <!-- El Autor -->
+  <section id="autor" class="author-section">
+    <div class="profile-avatar-container">
+      <div class="avatar-ring">
+        <span class="avatar-placeholder">Cristian Alari</span>
       </div>
     </div>
-  </section>
+    
+    <div class="section-tag">SOBRE EL AUTOR</div>
+    <h2 class="author-title">CRISTIAN ALARI</h2>
+    <p class="author-subtitle">Escritor & Miembro de la Sociedad Argentina de Escritores (SADE)</p>
+    
+    <p class="author-bio">
+      Apasionado por la narrativa de suspenso, la mitología y los relatos que desafían los límites de la razón, Cristian Alari construye universos donde el misterio, los ritos ancestrales y la psicología humana se entrelazan en tramas atrapantes.
+    </p>
+    <p class="author-bio">
+      Como integrante de la SADE, combina su labor literaria con una búsqueda constante de nuevas voces y matices dentro del género policíaco y fantástico contemporáneo.
+    </p>
 
-  <!-- Dónde Comprar (Actualizado con las nuevas tiendas) -->
-  <section id="donde-comprar" class="section">
-    <div class="container text-center">
-      <h2>Dónde Conseguir el Libro</h2>
-      <p class="section-desc">Elegí tu tienda preferida para adquirir "Morgana: Pulsión de muerte 1":</p>
-      
-      <div class="shop-buttons">
-        <a href="https://restaurantdelamente.com/6041-cristian-alari-morgana.html" target="_blank" rel="noopener noreferrer" class="btn-shop">
-          <span class="shop-name">Restaurant de la Mente</span>
-          <span class="shop-action">Ver en tienda &rarr;</span>
-        </a>
-
-        <a href="https://tienda.pipbuk.com/productos/morgana/" target="_blank" rel="noopener noreferrer" class="btn-shop">
-          <span class="shop-name">Tienda Pipbuk</span>
-          <span class="shop-action">Ver en tienda &rarr;</span>
-        </a>
+    <div class="info-boxes">
+      <div class="info-box">
+        <h3>SADE</h3>
+        <p>Miembro Oficial</p>
+      </div>
+      <div class="info-box">
+        <h3>MORGANA I</h3>
+        <p>Pulsión de muerte</p>
       </div>
     </div>
+
+    <div class="social-buttons">
+      <a href="#" target="_blank" class="btn btn-outline">Instagram</a>
+      <a href="#" target="_blank" class="btn btn-outline">TikTok</a>
+    </div>
   </section>
 
-  <!-- Pie de página -->
-  <footer id="contacto" class="footer">
-    <div class="container text-center">
-      <p>&copy; 2026 Cristian Alari. Todos los derechos reservados.</p>
-      <p class="credits">Diseñado y gestionado para difusión literaria.</p>
-    </div>
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Cristian Alari. Todos los derechos reservados.</p>
+    <p><a href="#">Instagram</a> | <a href="#">TikTok</a></p>
   </footer>
 
 </body>

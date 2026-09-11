@@ -1,0 +1,420 @@
+/* Variables de Colores */
+:root {
+    --bg-dark: #0f0f12;
+    --bg-card: #18181f;
+    --primary-purple: #9d4edd;
+    --accent-glow: #7b2cbf;
+    --accent-red: #d90429;
+    --accent-red-bright: #ff4d6d;
+    --text-light: #f4f4f9;
+    --text-muted: #a0a0b0;
+    --font-title: 'Cinzel', serif;
+    --font-body: 'Inter', sans-serif;
+}
+
+/* Reset Básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    font-family: var(--font-body);
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 10%;
+    background-color: rgba(15, 15, 18, 0.95);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid rgba(157, 78, 221, 0.2);
+}
+
+.logo {
+    font-family: var(--font-title);
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--primary-purple);
+    letter-spacing: 2px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.navbar a {
+    color: var(--text-muted);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: var(--primary-purple);
+}
+
+/* Hero Section */
+.hero {
+    min-height: 85vh;
+    padding: 3rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: radial-gradient(circle, rgba(123, 44, 191, 0.15) 0%, rgba(15, 15, 18, 1) 75%);
+}
+
+.hero h1 {
+    font-family: var(--font-title);
+    font-size: 4rem;
+    letter-spacing: 6px;
+    color: var(--text-light);
+    text-shadow: 0 0 20px rgba(157, 78, 221, 0.5);
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    color: var(--primary-purple);
+    margin-bottom: 1rem;
+}
+
+.tagline {
+    color: var(--text-muted);
+}
+
+.hero-buttons {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Botones */
+.btn {
+    padding: 0.8rem 1.8rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s;
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: var(--primary-purple);
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: var(--accent-glow);
+    box-shadow: 0 0 15px var(--accent-glow);
+}
+
+.btn-secondary {
+    border: 1px solid var(--accent-red);
+    color: var(--accent-red-bright);
+}
+
+.btn-secondary:hover {
+    background-color: rgba(217, 4, 41, 0.15);
+    box-shadow: 0 0 12px rgba(217, 4, 41, 0.4);
+}
+
+/* Sección Libro Morgana */
+.section-book {
+    padding: 5rem 10%;
+    background-color: var(--bg-card);
+}
+
+.flex-container {
+    display: flex;
+    gap: 3rem;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+/* Imagen de Portada del Libro */
+.book-cover {
+    display: flex;
+    justify-content: center;
+}
+
+.cover-img {
+    width: 260px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 25px rgba(157, 78, 221, 0.4);
+    border: 1px solid rgba(157, 78, 221, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cover-img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 35px rgba(157, 78, 221, 0.7);
+}
+
+.book-details {
+    max-width: 650px;
+}
+
+.book-details h2 {
+    font-family: var(--font-title);
+    margin-bottom: 1.5rem;
+    font-size: 2.2rem;
+}
+
+/* Estilos de la Sinopsis */
+.synopsis p {
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    line-height: 1.7;
+}
+
+.synopsis-quote {
+    font-family: var(--font-title);
+    font-size: 1.3rem !important;
+    color: var(--primary-purple);
+    font-weight: bold;
+    font-style: italic;
+}
+
+.synopsis-highlight {
+    border-left: 3px solid var(--primary-purple);
+    padding-left: 1rem;
+    color: var(--text-light) !important;
+    font-style: italic;
+}
+
+.buy-links {
+    margin-top: 1.5rem;
+}
+
+.btn-buy {
+    display: inline-block;
+    background-color: #e67e22;
+    color: #fff;
+    padding: 0.8rem 1.6rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+    text-align: center;
+}
+
+.btn-buy:hover {
+    background-color: #d35400;
+}
+
+/* Sección Misterio (Especial Rojo / Próximo Lanzamiento) */
+.section-mystery {
+    padding: 6rem 10%;
+    text-align: center;
+    background: radial-gradient(circle, rgba(217, 4, 41, 0.22) 0%, rgba(15, 15, 18, 1) 85%);
+    border-top: 1px solid rgba(217, 4, 41, 0.3);
+    border-bottom: 1px solid rgba(217, 4, 41, 0.3);
+}
+
+.mystery-badge {
+    background-color: rgba(217, 4, 41, 0.15);
+    color: var(--accent-red-bright);
+    padding: 0.4rem 1.2rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    border: 1px solid var(--accent-red);
+    text-transform: uppercase;
+}
+
+.section-mystery h2 {
+    font-family: var(--font-title);
+    font-size: 2.4rem;
+    margin: 1.5rem 0 1rem;
+}
+
+.mystery-text {
+    color: var(--text-muted);
+}
+
+.teaser-box {
+    margin: 2.5rem auto;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 2px solid var(--accent-red);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 30px rgba(217, 4, 41, 0.4);
+    background-color: rgba(15, 15, 18, 0.8);
+}
+
+.question-mark {
+    font-family: var(--font-title);
+    font-size: 4.5rem;
+    color: var(--accent-red-bright);
+    text-shadow: 0 0 10px rgba(217, 4, 41, 0.8);
+}
+
+.subscribe-form {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.subscribe-form input {
+    padding: 0.8rem 1rem;
+    border-radius: 5px;
+    border: 1px solid #333;
+    background-color: #1a1a22;
+    color: #fff;
+    width: 280px;
+    max-width: 100%;
+    outline: none;
+}
+
+.subscribe-form input:focus {
+    border-color: var(--accent-red);
+}
+
+.subscribe-form .btn-submit {
+    padding: 0.8rem 1.5rem;
+    background-color: var(--accent-red);
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+.subscribe-form .btn-submit:hover {
+    background-color: #ef233c;
+    box-shadow: 0 0 15px rgba(239, 35, 60, 0.6);
+}
+
+/* Sección Autor & Footer */
+.section-author {
+    padding: 4rem 10%;
+    background-color: var(--bg-card);
+    text-align: center;
+}
+
+.section-author h2 {
+    font-family: var(--font-title);
+    margin-bottom: 1rem;
+}
+
+.author-bio {
+    color: var(--text-muted);
+}
+
+footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    border-top: 1px solid #222;
+}
+
+footer a {
+    color: var(--primary-purple);
+    text-decoration: none;
+}
+
+/* ===================================================
+   ADAPTACIÓN PARA CELULARES Y TABLETS (RESPONSIVE)
+   =================================================== */
+
+@media (max-width: 768px) {
+    /* Navbar móvil */
+    .navbar {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem 5%;
+        text-align: center;
+    }
+
+    .navbar ul {
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /* Hero */
+    .hero h1 {
+        font-size: 2.5rem;
+        letter-spacing: 3px;
+    }
+
+    .subtitle {
+        font-size: 1.2rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    /* Sección Libro en 1 columna */
+    .section-book {
+        padding: 3rem 6%;
+    }
+
+    .flex-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .book-details {
+        text-align: left;
+    }
+
+    .book-details h2 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .btn-buy {
+        display: block;
+        width: 100%;
+    }
+
+    /* Sección Misterio */
+    .section-mystery {
+        padding: 4rem 6%;
+    }
+
+    .section-mystery h2 {
+        font-size: 1.8rem;
+    }
+
+    .subscribe-form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .subscribe-form input,
+    .subscribe-form .btn-submit {
+        width: 100%;
+    }
+}

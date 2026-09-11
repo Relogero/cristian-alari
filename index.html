@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cristian Alari | Morgana</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navegación -->
+    <header class="navbar">
+        <div class="logo">Cristian Alari</div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#morgana">Morgana I</a></li>
+                <li><a href="#misterio">Próximamente</a></li>
+                <li><a href="#autor">El Autor</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección 1: Portada / Hero -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>MORGANA</h1>
+            <p class="subtitle">Pulsión de Muerte I</p>
+            <p class="tagline">¿El rey Arturo en Lanús?</p>
+            <div class="hero-buttons">
+                <a href="#morgana" class="btn btn-primary">Ver Morgana I</a>
+                <a href="#misterio" class="btn btn-secondary">El Nuevo Libro</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección 2: Libro Morgana I -->
+    <section id="morgana" class="section-book">
+        <div class="container flex-container">
+            <div class="book-cover">
+                <!-- Imagen real del libro -->
+                <img src="portada.jpg" alt="Morgana - Pulsión de Muerte I" class="cover-img">
+            </div>
+            <div class="book-details">
+                <h2>Morgana - Pulsión de muerte I</h2>
+                <div class="synopsis">
+                    <p class="synopsis-quote">«¿El rey Arturo en Lanús?»</p>
+                    <p>El obispo de Lanús llevaba una vida tranquila y apacible hasta que una noche, al volver de su iglesia, se topó con un desconocido que vino a cobrarse una deuda del pasado. Le auguró una cruel y dolorosa venganza y, de un día para otro, lo perdió todo: su familia, su trabajo y su fe.</p>
+                    <p>Allí comenzará un derrotero para resolver un rompecabezas macabro y averiguar quién está detrás de su padecimiento. En el camino se encontrará con una misteriosa y seductora mujer llamada Morgana que lo ayudará en su cruzada, y juntos se verán envueltos en una serie de asesinatos rituales que amenazan con hacer tambalear las estructuras de la razón.</p>
+                    <p>Un policía retirado apodado “el Tumba”, experto en este tipo de casos, es convocado por la oficial Maderna para que la ayude en la investigación con la excusa de que una de las víctimas es su sobrino. Ambos llegarán a la conclusión de que los hechos guardan relación con antiguos ritos paganos en donde las víctimas son ofrecidas como sacrificios humanos.</p>
+                    <p class="synopsis-highlight">Una atrapante novela que llevará a los protagonistas a enfrentar situaciones extremas en donde deberán lidiar con sus creencias, poniendo a prueba su ética y sus ambiciones de poder. Un viaje que nos conducirá a través de los misterios de la religión, la brujería y la mitología celta.</p>
+                </div>
+                <div class="buy-links">
+                    <a href="https://www.amazon.com/dp/B0CYCQYNDJ?ref=cm_sw_r_ffobk_cso_cp_mwn_dp_RGXJMDDC8G3VDFSRY69E&ref_=cm_sw_r_ffobk_cso_cp_mwn_dp_RGXJMDDC8G3VDFSRY69E&social_share=cm_sw_r_ffobk_cso_cp_mwn_dp_RGXJMDDC8G3VDFSRY69E&bestFormat=true&utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAcGRvZgJleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA85MzY2MTk3NDMzOTI0NTkAAafm0j6R4f5EzK6qgiFozf8OQst5LnWIXJ2fKgnV-lK0leyBhZzdiJ910YANlw_aem_7dEhuY9lIcL3hfLyCNkdGQ" target="_blank" rel="noopener noreferrer" class="btn-buy">Comprar en Amazon</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección 3: El Interrogante / Próximo Libro (Especial Rojo) -->
+    <section id="misterio" class="section-mystery">
+        <div class="container text-center">
+            <span class="mystery-badge">Próximo Lanzamiento</span>
+            <h2>¿Qué se oculta en las sombras?</h2>
+            <p class="mystery-text">
+                Una nueva historia se está gestando... Los secretos aún no revelados pronto verán la luz.
+            </p>
+            <div class="teaser-box">
+                <span class="question-mark">?</span>
+            </div>
+            <form class="subscribe-form" onsubmit="event.preventDefault(); alert('¡Pronto recibirás novedades!');">
+                <input type="email" placeholder="Tu email para novedades exclusivas" required>
+                <button type="submit" class="btn-submit">Enterarme primero</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Sección 4: Sobre el Autor -->
+    <section id="autor" class="section-author">
+        <div class="container text-center">
+            <h2>Cristian Alari</h2>
+            <p class="author-bio">
+                Escritor y miembro de la Sociedad Argentina de Escritores (SADE).
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Cristian Alari. Todos los derechos reservados.</p>
+        <div class="socials">
+            <a href="https://www.instagram.com/cristianalari.morgana/" target="_blank" rel="noopener noreferrer">Instagram</a> |
+            <a href="https://www.tiktok.com/@cristianalari.morgana?_r=1&_t=ZS-96p2U6IuJAy&fbclid=PAcGRvZgJleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA85MzY2MTk3NDMzOTI0NTkAAadfkhT-UUgw3OYSBivOcDQKsPGPLlhMK14gl8NlwbKM8dfBF1XHqrQKmXlZpQ_aem_uQ8jCkPZxJ-A7NYM8jy4Pg" target="_blank" rel="noopener noreferrer">TikTok</a>
+        </div>
+    </footer>
+
+</body>
+</html>
